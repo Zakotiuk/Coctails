@@ -1,0 +1,172 @@
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr 1fr 2fr;
+    align-items: baseline; 
+    padding-top: 25px;
+}
+
+a{
+    cursor: pointer;
+}
+
+.logo{
+    font-size: 25px;
+    font-weight:bold
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+}
+
+.menu__item{
+    font-size: 14px;
+}
+
+.menu__item:active{
+    border-bottom: 2px solid rgb(197, 58, 93);
+}
+
+.input__search{
+    padding: 3.9px 10px;
+    outline: none;
+    transition: opacity 1s ease-in-out;
+    visibility: unset;
+    border: none;
+    border-bottom: 1px solid black;
+    opacity: 0%;
+}
+
+.input__search:hover{
+    opacity: 100%;
+    animation: onHower 0.5s;
+}
+
+@keyframes onHower {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+
+.search{
+    display: flex;
+}
+.search__img{
+    padding-left: 10px;
+}
+
+.burger__menu{
+    visibility: hidden;
+}
+
+
+@media (max-width: 767px) {
+    .navbar{
+        display: flex;
+        padding-top: 0px;
+        height: 60px;
+    }
+    .burger__menu{
+        padding-left: 40vw;
+        padding-bottom: 20px;
+        order: 0 !important;
+    }
+    .logo{
+        padding-top: 30px;
+        font-size: 20px !important;
+        order: -1 !important;
+        margin-left: 45px !important;
+    }
+}
+
+@media (max-width : 992px) {
+    .burger__menu{
+        visibility: visible;
+    }
+    .menu{
+        visibility: hidden;
+    }
+    .search{
+        visibility: hidden;
+    }
+    .navbar{
+        display: flex;
+        padding-top: 0px;
+        height: 60px;
+    }
+    .burger__menu{
+        padding-bottom: 20px;
+        order: -1;
+    }
+    .logo{
+        order: 0;
+        margin-left: 50px;
+        padding-top: 50px;
+        font-size: 20px !important;
+    }
+}
+
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+    position:relative;
+    width: 26px;
+    height: 20px;
+    left: 26px;
+    top: 26px;
+  }
+  
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: rgb(187, 5, 57);
+  }
+  
+  
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+  
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #bdc3c7;
+  }
+  
+  /*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+  .bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+  }
+  
+  /* General sidebar styles */
+  .bm-menu {
+    background: rgb(201, 98, 127);
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+  }
+  
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+  
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+  }
+  
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+  }
+  
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }

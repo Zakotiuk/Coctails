@@ -1,0 +1,127 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    height: 667px;
+    z-index: -2;
+    position: relative;
+}
+
+.left__part{
+    display: grid;
+    grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr 0.4fr 0.5fr 1fr 1fr 0.8fr;
+}
+
+
+.logo__main{
+    font-size: 75px;
+    display: flex;
+}
+
+@media (max-width : 1200px) {
+    .logo__main{
+        font-size: 55px;
+        display: flex;
+    }
+    .slider{
+        margin-left: 200px;
+    }
+}
+
+
+.logo__phrase{
+    font-size: 20px;
+    display: flex;
+}
+
+.div__button{
+    display: flex;
+    justify-content: left;
+}
+
+.button__shop{
+    font-size: 15px;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 7px rgb(136, 136, 136);
+    background-color: rgb(187, 5, 58);
+    color: white;
+}
+
+
+li{
+    display: inline;
+}
+
+.button__icon{
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid rgb(150, 149, 149);
+    border-radius: 2em;
+    padding: 12px;
+    height: 46px;
+}
+
+.icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+ul{
+    display: flex;
+    justify-content:space-between;
+    padding: 0px;
+}
+
+.slider{
+    margin-left: 240px;
+}
+
+.coctail__img{
+    margin-top: 25px;
+    height: 89%;
+    width: 120%;
+    border: rgba(187, 5, 57, 0.575) dashed 3px;
+}
+
+
+@media (max-width : 992px) {
+    .slider{
+        width: 35vw;
+        height: 30rem;
+        margin-left: 1rem;
+    }
+    .logo__main{
+        font-size: 40px;
+        display: flex;
+    }
+    .icons{
+        display: none;
+    }
+}
+
+@media (max-width : 767px) {
+    .header{
+        display: flex;
+        flex-direction:column-reverse;
+        height: 80vh;
+    }
+    .slider{
+        width: 75vw;
+        height: 50vh;
+        margin: 0px;
+    }
+    .left__part{
+        height: 30vh;
+    }
+    .button__shop{
+        margin-left: 6rem;
+    }
+    .logo__main{
+        margin-left: 5rem;
+        font-size: 40px;
+    }
+    .logo__phrase{
+        margin-left: 4rem;
+    }
+}
