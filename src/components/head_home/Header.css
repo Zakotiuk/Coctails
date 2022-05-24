@@ -62,10 +62,6 @@ li{
     height: 46px;
 }
 
-.icons{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
 
 ul{
     display: flex;
@@ -73,7 +69,7 @@ ul{
     padding: 0px;
 }
 
-.slider{
+.div_image{
     margin-left: 240px;
 }
 
@@ -86,7 +82,7 @@ ul{
 
 
 @media (max-width : 992px) {
-    .slider{
+    .div_image{
         width: 35vw;
         height: 30rem;
         margin-left: 1rem;
@@ -106,7 +102,7 @@ ul{
         flex-direction:column-reverse;
         height: 80vh;
     }
-    .slider{
+    .div_image{
         width: 75vw;
         height: 50vh;
         margin: 0px;
@@ -118,7 +114,7 @@ ul{
         margin-left: 6rem;
     }
     .logo__main{
-        margin-left: 5rem;
+        margin-left: 4rem;
         font-size: 40px;
     }
     .logo__phrase{

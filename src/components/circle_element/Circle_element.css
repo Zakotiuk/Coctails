@@ -1,0 +1,19 @@
+.circle_menu{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.circle{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 2px;
+    border-radius: 6rem;
+}
+
+.div_circle{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}

@@ -1,0 +1,19 @@
+.logo_menu{
+    font-size: 60px;
+    padding-bottom: 50px;
+}
+
+.menu_filters{
+    display: flex;
+    justify-content: space-around
+}
+
+
+@media (max-width : 767px) {
+    .logo_menu{
+        font-size: 40px;
+    }
+    ._item{
+        font-size: 30px !important;    
+    }
+}

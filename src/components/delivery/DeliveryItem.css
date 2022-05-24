@@ -1,0 +1,28 @@
+.div_delivery{
+    display: grid;
+    grid-template-columns: 2fr 0.32fr 1fr;
+}
+
+.div_facts{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo_delivery{
+   padding-top: 70px;
+   padding-bottom: 38px;
+}
+
+.table_facts{
+    padding-left: 100px;
+}
+
+.img_delivery{
+    height: 70vh;
+    width: 47vw;
+}
+
+.td_facts{
+    text-align: left;
+    padding: 19px 10px;
+}

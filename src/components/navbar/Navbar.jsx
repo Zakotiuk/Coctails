@@ -6,7 +6,7 @@ const Navbar = () =>{
 
     return (
             <div className="navbar">
-                <a className="logo">Coctails</a>
+                <a className="logo">Cocktails</a>
 
                 <div className="burger__menu">
                     <Menu right>

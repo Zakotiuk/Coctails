@@ -1,0 +1,40 @@
+.inputs{
+    font-size: 15px;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 2rem;
+    background-color: rgb(243, 243, 243);
+    margin-bottom: 30px;
+}
+
+.button__shop{
+    background-color: rgb(187, 5, 58);
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.div_form_order{
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+}
+
+.div_with_form{
+    margin-top: 65px;
+    margin-left: 70px;
+}
+
+.image{
+    justify-content: left;
+    height: 70vh;
+    width: 95vh;
+}
+
+.paragraph{
+    margin-left: 22px;
+}

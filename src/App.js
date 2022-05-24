@@ -1,7 +1,6 @@
 import { Helmet } from 'react-helmet';
 import './App.css';
-import Header from './components/head_home/Header';
-import Navbar from './components/navbar/Navbar';
+import MainPage from './components/pages/MainPage';
 
 function App() {
   return (
@@ -12,10 +11,7 @@ function App() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
       </Helmet> 
 
-    <div className="container">
-      <Navbar/>
-      <Header/>
-      </div>
+      <MainPage/>
     </div>
   );
 }

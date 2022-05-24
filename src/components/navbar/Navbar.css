@@ -24,7 +24,11 @@ a{
     font-size: 14px;
 }
 
-.menu__item:active{
+.menu__item__active{
+    border-bottom: 2px solid rgb(197, 58, 93);
+}
+
+.menu__item:hover{
     border-bottom: 2px solid rgb(197, 58, 93);
 }
 
@@ -77,6 +81,9 @@ a{
         font-size: 20px !important;
         order: -1 !important;
         margin-left: 45px !important;
+    }
+    .menu__item{
+        font-size: 30px !important;
     }
 }
 
