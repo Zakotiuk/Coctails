@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Navbar_menu.css'
 
-const Navbar_menu = ({setNewType}) =>{
+const Navbar_menu = ({setNewType, logo}) =>{
     const [lastElementId, setLastElementId] = useState();
 
     useEffect(()=>{
@@ -22,16 +22,16 @@ const Navbar_menu = ({setNewType}) =>{
 
     return (
         <div className="navbar_menu">
-            <a className="logo_menu">Cocktails</a>
+            <a className="logo_menu">{logo}</a>
             <ul className="menu_filters">
                     <li>
-                        <a id='1' onClick={setType} className="menu__item__active menu__item">Alcoholic</a>
+                        <a id='1' onClick={setType} className="menu__item__active">Alcoholic</a>
                     </li>
                     <li>
-                        <a id='2' className = '_item' onClick={setType}>Non alcoholic</a>
+                        <a id='2' className = ' menu__item' onClick={setType}>Non alcoholic</a>
                     </li>
                     <li>
-                        <a id='3' className = '_item' onClick={setType}>Optional alcohol</a>
+                        <a id='3' className = ' menu__item' onClick={setType}>Optional alcohol</a>
                     </li>
             </ul>
         </div>

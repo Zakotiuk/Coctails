@@ -3,7 +3,7 @@ import './DeliveryItem.css'
 
 const DeliveryItem = () =>{
     return(
-        <div className="div_delivery">
+        <div id="delivery" className="div_delivery">
             <div className="div_facts">
                 <span className="logo_menu logo_delivery">Delivery terms</span>
                 <table className="table_facts">

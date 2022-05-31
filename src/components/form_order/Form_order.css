@@ -9,6 +9,7 @@
 
 .button__shop{
     background-color: rgb(187, 5, 58);
+    cursor: pointer;
 }
 
 
@@ -19,6 +20,7 @@
 }
 
 .div_form_order{
+    padding-top: 100px;
     margin-bottom: 100px;
     display: grid;
     grid-template-columns: 1.6fr 1fr;

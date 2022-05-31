@@ -1,0 +1,15 @@
+.catalog_logo{
+    font-size: 30px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.catalog_cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}

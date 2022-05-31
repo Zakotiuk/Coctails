@@ -29,6 +29,9 @@
 }
 
 
-.App-link {
-  color: #61dafb;
+
+
+.non_link_style{
+  text-decoration: none;
+  color: black;
 }

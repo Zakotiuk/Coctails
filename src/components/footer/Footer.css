@@ -29,3 +29,7 @@ td{
 .td_in_2_table{
     padding-bottom: 15px;
 }
+
+.footer_item{
+    cursor: pointer;
+}

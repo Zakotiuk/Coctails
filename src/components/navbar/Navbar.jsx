@@ -1,38 +1,40 @@
 import React from 'react'
 import './Navbar.css'
 import { push as Menu } from 'react-burger-menu'
+import { Link } from 'react-router-dom';
+import { Link as Link_Scroll} from 'react-scroll/modules';
 
 const Navbar = () =>{
 
     return (
-            <div className="navbar">
-                <a className="logo">Cocktails</a>
+            <div className="navbar container">
+               <Link className="logo non_link_style" to='/'>Cocktails</Link>
 
                 <div className="burger__menu">
                     <Menu right>
-                        <a className="menu-item" href="/">Home</a>
-                        <a className="menu-item" href="/about">Catalog</a>
-                        <a className="menu-item" href="/contact">How to order</a>
-                        <a className="menu-item" href="/about">Delivery</a>
-                        <a className="menu-item" href="/about">Contacts</a>
+                        <Link className="menu-item non_link_style" to='/'>Home</Link>
+                        <Link className="menu-item non_link_style" to="/catalog">Catalog</Link>
+                        <Link className="menu-item non_link_style" to="/catalog">How to order</Link>
+                        <a className="menu-item non_link_style" href="/about">Delivery</a>
+                        <a className="menu-item non_link_style" href="/about">Contacts</a>
                     </Menu>
                 </div>
 
                 <ul className="menu">
                     <li>
-                        <a className="menu__item">Home</a>
+                        <Link className="menu__item non_link_style" to='/'>Home</Link>
                     </li>
                     <li>
-                        <a className="menu__item">Catalog</a>
+                        <Link className="menu__item non_link_style" to="/catalog">Catalog</Link>
                     </li>
                     <li>
-                        <a className="menu__item">How to order</a>
+                        <Link_Scroll to='form_order' smooth='true' duration={2000} className="menu__item">How to order</Link_Scroll> 
                     </li>
                     <li>
-                         <a className="menu__item">Delivery</a>
+                        <Link_Scroll to='delivery' smooth='true' duration={2500} className="menu__item">Delivery</Link_Scroll>
                     </li>
                     <li>
-                        <a className="menu__item">Contacts</a>
+                        <Link_Scroll to='delivery' smooth='true' duration={3000} className="menu__item">Contacts</Link_Scroll>
                     </li>
                 </ul>
 

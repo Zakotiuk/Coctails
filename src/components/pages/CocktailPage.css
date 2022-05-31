@@ -1,0 +1,35 @@
+.cocktail_div{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.cocktail_img{
+    height: 70vh;
+    width: 32vw;
+}
+
+.cockatail_info_div{
+    margin-left: 100px;
+}
+
+.cockatail_info_div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-right: 150px;
+}
+
+.cocktail_logo{
+    text-align: left;
+}
+
+.cocktail_instruction{
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.cocktail_btn{
+    display: flex;
+}

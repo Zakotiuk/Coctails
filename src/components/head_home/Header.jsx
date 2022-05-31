@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link as Link_Scroll} from 'react-scroll/modules';
 import Media_buttons from '../media_buttons/Media_buttons';
 import './Header.css'
 
@@ -12,7 +13,7 @@ const Header = () => {
                     <p className="logo__phrase">We work in every part of your town, check it</p>
                 <span/>
                 <div className="div__button">
-                <button className="button__shop">Shop now</button>
+                <Link_Scroll to='form_order' smooth='true' duration={2000}> <button className="button__shop button_header field">Shop now</button></Link_Scroll>
                 </div>
                 <span/>
                 <Media_buttons/>

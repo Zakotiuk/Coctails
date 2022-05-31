@@ -1,0 +1,17 @@
+.navigation_span{
+    color: rgb(148, 148, 148);
+    letter-spacing : 5px;
+    font-size: 14px;
+    margin-left: 18px;
+    margin-top: 20px;
+}
+
+.navigation_div{
+    display: flex;
+    justify-content: left;
+    margin-top: 30px;
+}
+
+.non-link-style{
+  text-decoration: none;
+}

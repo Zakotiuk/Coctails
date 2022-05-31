@@ -4,12 +4,10 @@ import Form_order from "../form_order/Form_order";
 import Header from "../head_home/Header";
 import Head_Menu from "../navbar_menu/Navbar_menu";
 import Menu from "../menu/Menu";
-import Navbar from "../navbar/Navbar";
 import Footer from "../footer/Footer";
 import { useFetching } from "../../hooks/useFetching";
 import CoctailsService from "../../services/CoctailsServices";
-import { getPagesArray } from "../../utils/Pages";
-import { getFive } from "../../utils/GetFive";
+import Navbar from '../navbar/Navbar'
 
 const MainPage = () => {
     let logo_adv = "Our advantages";
@@ -31,20 +29,17 @@ const MainPage = () => {
     }
 
     const [alcoholCock, setAlcoholCock] = useState([])
-    const [page, setPage] = useState(1)
-    const [totalPage, setTotalPage] = useState([])
     const [type, setType] = useState(['Alcoholic'])
 
     const [fetching, isLoading, error] = useFetching(async()=> {
         const response = await CoctailsService.getCoctails(type);
         setAlcoholCock(response);
-        setTotalPage(getPagesArray(5));
     })
 
     function setNewType (value) {
         setType(value);
-        console.log(value);
     }
+
 
     useEffect(()=>{
         fetching();
@@ -56,7 +51,7 @@ const MainPage = () => {
         <div className="container">
             <Navbar/>
             <Header/>
-            <Head_Menu setNewType={setNewType}/>
+            <Head_Menu logo={"Cocktails"} setNewType={setNewType}/>
             <Menu cocktails={alcoholCock}/>
             <Circle_elements images={images_adv} pharses={phrases} logo={logo_adv} elements = {advantage}/>
             <Form_order></Form_order>

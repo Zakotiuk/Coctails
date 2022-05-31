@@ -2,6 +2,7 @@ import React from "react";
 import DeliveryItem from "../delivery/DeliveryItem";
 import Media_buttons from "../media_buttons/Media_buttons";
 import './Footer.css'
+import { Link as Link_Scroll} from 'react-scroll/modules';
 
 const Footer = () => {
     return (
@@ -30,14 +31,13 @@ const Footer = () => {
                         <table width={100 + '%'}>
                         <tbody>
                         <tr>
-                            <td className="td_in_2_table">Home</td>
-                            <td className="td_in_2_table">Our team</td>
-                            <td className="td_in_2_table">How to order</td>
+                            <td className="td_in_2_table footer_item">Home</td>
+                            <td className="td_in_2_table footer_item">Our team</td>
+                            <td className="td_in_2_table footer_item"><Link_Scroll to='form_order' smooth='true' duration={1000}>How to order</Link_Scroll></td>
                         </tr>
                         <tr>
-                            <td>Catalog</td>
-                            <td>Reviews</td>
-                            <td>Delivery</td>
+                            <td className="footer_item">Catalog</td>
+                            <td className="footer_item">Delivery</td>
                         </tr>
                         </tbody>
                         </table>
