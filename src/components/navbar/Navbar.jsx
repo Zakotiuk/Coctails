@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Navbar.css'
 import { push as Menu } from 'react-burger-menu'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Link as Link_Scroll} from 'react-scroll/modules';
 
 const Navbar = () =>{
 
+    const router = useNavigate();
+    const [searchLine, setSearchLine] = useState('');
+
     return (
-            <div className="navbar container">
+            <div id='navbar' className="navbar container">
                <Link className="logo non_link_style" to='/'>Cocktails</Link>
 
                 <div className="burger__menu">
@@ -40,8 +43,8 @@ const Navbar = () =>{
 
                 <span/>
                 <div className="search">
-                    <input placeholder="Search..." className="input__search" type="text"/>
-                    <img src="https://img.icons8.com/ios/30/000000/search--v1.png"/>
+                    <input onChange={ (e)=>{setSearchLine(e.target.value)}} placeholder="Enter name..." className="input__search" type="text"/>
+                    <img onClick={()=> router(`/catalog/search/${searchLine}`)} className='icon_search' src="https://img.icons8.com/ios/30/000000/search--v1.png"/>
                 </div>
             </div>
     );

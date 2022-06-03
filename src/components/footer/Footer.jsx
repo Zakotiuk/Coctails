@@ -3,6 +3,7 @@ import DeliveryItem from "../delivery/DeliveryItem";
 import Media_buttons from "../media_buttons/Media_buttons";
 import './Footer.css'
 import { Link as Link_Scroll} from 'react-scroll/modules';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -31,12 +32,12 @@ const Footer = () => {
                         <table width={100 + '%'}>
                         <tbody>
                         <tr>
-                            <td className="td_in_2_table footer_item">Home</td>
-                            <td className="td_in_2_table footer_item">Our team</td>
+                            <td className="td_in_2_table footer_item"><Link_Scroll to='navbar' smooth='true' duration={800}>Home</Link_Scroll></td>
+                            <td className="td_in_2_table footer_item"><Link_Scroll to='barmen' smooth='true' duration={1000}>Our team</Link_Scroll></td>
                             <td className="td_in_2_table footer_item"><Link_Scroll to='form_order' smooth='true' duration={1000}>How to order</Link_Scroll></td>
                         </tr>
                         <tr>
-                            <td className="footer_item">Catalog</td>
+                            <td className="footer_item"><Link className="non_link_style" to='/catalog'>Catalog</Link></td>
                             <td className="footer_item">Delivery</td>
                         </tr>
                         </tbody>

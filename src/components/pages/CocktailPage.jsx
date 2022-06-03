@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useFetching } from "../../hooks/useFetching";
 import CoctailsService from "../../services/CoctailsServices";
+import MyLoader from "../loader/Loader";
 import Navigation from "../navigation/Navigation";
 import './CocktailPage.css'
 
@@ -25,6 +26,11 @@ const CocktailPage = () => {
 
     return (
         <div className="container">
+            {
+            isLoading ?
+                    <MyLoader></MyLoader>
+                : 
+                <div>
         <Navigation text={cocktail.strDrink}></Navigation>
         <div className="cocktail_div">
             <img className="cocktail_img" src={cocktail.strDrinkThumb}/>
@@ -36,6 +42,8 @@ const CocktailPage = () => {
             </div>
         </div>
         {/* <Three_Cards cocktails={cock} type={cocktail.strAlcoholic}></Three_Cards> */}
+        </div>
+                }
         </div>
     )
 }

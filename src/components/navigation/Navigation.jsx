@@ -18,8 +18,11 @@ const Navigation = ({text}) => {
                     <Link className="non-link-style navigation_span" to="">{text}</Link>
                 </div>
             }
+
         </div>
     )
 }
+
+// DotLoader  PuffLoader RingLoader
 
 export default Navigation;

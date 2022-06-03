@@ -8,6 +8,7 @@ import Footer from "../footer/Footer";
 import { useFetching } from "../../hooks/useFetching";
 import CoctailsService from "../../services/CoctailsServices";
 import Navbar from '../navbar/Navbar'
+import MyLoader from "../loader/Loader";
 
 const MainPage = () => {
     let logo_adv = "Our advantages";
@@ -28,23 +29,11 @@ const MainPage = () => {
         pharses : ["High quality", "Decoration", "Fast delivery"]
     }
 
-    const [alcoholCock, setAlcoholCock] = useState([])
     const [type, setType] = useState(['Alcoholic'])
-
-    const [fetching, isLoading, error] = useFetching(async()=> {
-        const response = await CoctailsService.getCoctails(type);
-        setAlcoholCock(response);
-    })
 
     function setNewType (value) {
         setType(value);
     }
-
-
-    useEffect(()=>{
-        fetching();
-    },[type]);
-
     
     return (
         <div>
@@ -52,12 +41,12 @@ const MainPage = () => {
             <Navbar/>
             <Header/>
             <Head_Menu logo={"Cocktails"} setNewType={setNewType}/>
-            <Menu cocktails={alcoholCock}/>
+            <Menu type={type}/>
             <Circle_elements images={images_adv} pharses={phrases} logo={logo_adv} elements = {advantage}/>
             <Form_order></Form_order>
             <Circle_elements images={images_brm} pharses={phrases} logo={logo_brm} elements = {advantage}/>
         </div>
-            <Footer/>
+        <Footer/>
         </div>
 
     )

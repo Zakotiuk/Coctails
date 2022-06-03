@@ -17,6 +17,7 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path='/' element={<MainPage/>}></Route>
+        <Route path="/catalog/search/:name" element={<CatalogPage/>}></Route>
         <Route path="/catalog" element={<CatalogPage/>}></Route>
         <Route path="/catalog/:id" element={<CocktailPage/>}/>
         <Route path="/" element={<Form_order/>}/>

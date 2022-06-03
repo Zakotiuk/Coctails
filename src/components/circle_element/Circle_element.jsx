@@ -4,7 +4,7 @@ import './Circle_element.css'
 
 const Circle_elements = (props) => {
     return (
-        <div className="div_circle">
+        <div id={ props.logo == "Our barmen" ? 'barmen' : 'cocktail' } className="div_circle">
         <span className="logo_menu">{props.logo}</span>
         <div className="circle_menu">
             {

@@ -40,3 +40,17 @@
 .paragraph{
     margin-left: 22px;
 }
+
+@media (max-width : 992px)
+{
+    .image{
+        display: none;
+        height: 10vh;
+    }
+}
+
+@media (max-width : 756px) {
+    .image{
+        display: none;
+    }
+}

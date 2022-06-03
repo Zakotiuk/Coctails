@@ -60,3 +60,11 @@
     font-size: 13px;
     padding: 13px 40px;
 }
+
+.div_menu{
+    height: 760px;
+}
+
+.div_loader{
+    margin-top: 300px;
+}

@@ -1,0 +1,21 @@
+.pgn_button{
+    font-size: 15px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 7px rgb(136, 136, 136);
+    background-color: rgb(187, 5, 58);
+    color: white;
+    cursor: pointer;
+}
+
+.pgn_active{
+    box-shadow: 2px 2px 7px rgb(187, 5, 58) !important;
+}
+
+.div_pagination{
+    padding: 0px 150px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}

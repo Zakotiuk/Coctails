@@ -8,10 +8,10 @@ const Form_order = () =>{
             <div className="div_with_form">
             <span className="logo_menu">How to order</span>
             <p className="paragraph">Please leave your contact information and we will get back to you in 20 minutes</p>
-            <form className="form">
+            <form onSubmit={e => {e.preventDefault()}} className="form">
                 <input className="inputs" placeholder="Name" type="text"/>
                 <input className="inputs" placeholder="Phone" type="text"/>
-                <button className="button__shop">Ok</button>
+                <input className="button__shop" type="submit" value="Ok"/>
             </form>
             </div>
         </div>

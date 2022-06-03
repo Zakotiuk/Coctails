@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './Catalog.css'
 import {useNavigate} from 'react-router-dom'
+import { useFetching } from '../../hooks/useFetching';
+import CoctailsService from '../../services/CoctailsServices';
 
 
 const Catalog = ({cocktails}) =>{
     const router = useNavigate();
-
+    
     return (
         <div className="catalog_cards">
         {
