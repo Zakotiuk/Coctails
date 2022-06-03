@@ -20,8 +20,7 @@
 }
 
 .div_form_order{
-    padding-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     display: grid;
     grid-template-columns: 1.6fr 1fr;
 }

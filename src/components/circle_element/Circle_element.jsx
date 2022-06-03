@@ -8,8 +8,12 @@ const Circle_elements = (props) => {
         <span className="logo_menu">{props.logo}</span>
         <div className="circle_menu">
             {
-                props.images.map((item, index) => 
-                    <img className="circle" src={item} key={index} alt="" />
+                props.elements.map((item, index) => 
+                    <div key={index} className="circle_element">
+                        <img className="circle" src={item.image} alt="" />
+                        <span className="circle_logo"><b>{item.text}</b></span>
+                        <span className="circle_skils">{item.skils}</span>
+                    </div>
                 )
             }
         </div>

@@ -5,6 +5,7 @@ import Form_order from './components/form_order/Form_order';
 import CatalogPage from './components/pages/CatalogPage';
 import CocktailPage from './components/pages/CocktailPage';
 import MainPage from './components/pages/MainPage';
+import Three_Cards from './components/three_cards/Three_cards';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/" element={<Form_order/>}/>
       </Routes>
       </BrowserRouter>
+
     </div>
   );
 }
